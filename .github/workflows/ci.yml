@@ -21,8 +21,6 @@ jobs:
         uses: trufflesecurity/trufflehog@v3.93.8
         with:
           path: .
-          base: ${{ github.event.repository.default_branch }}
-          head: HEAD
           extra_args: --only-verified
 
       - name: Validate HTML files
