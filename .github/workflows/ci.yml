@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate HTML & scan for secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for hardcoded secrets
+        uses: trufflesecurity/trufflehog@v3.88.22
+        with:
+          path: .
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+          extra_args: --only-verified
+
+      - name: Validate HTML files
+        run: npx htmlhint@1.1.4 index.html 404.html
+
+      - name: Verify security headers are present in HTML
+        run: |
+          grep -q 'Content-Security-Policy' index.html || (echo "CSP missing in index.html" && exit 1)
+          grep -q 'X-Content-Type-Options' index.html  || (echo "X-Content-Type-Options missing in index.html" && exit 1)
+          grep -q 'Content-Security-Policy' 404.html   || (echo "CSP missing in 404.html" && exit 1)
+          grep -q 'X-Content-Type-Options' 404.html    || (echo "X-Content-Type-Options missing in 404.html" && exit 1)
+          echo "All security headers verified."
