@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="bigua-analyzer — a powerful open-source static analysis tool. Coming soon." />
+  <title>bigua-analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a class="header-brand" href="/">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+      bigua-analyzer
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.76-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.624-5.48 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        GitHub
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <span class="badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Coming soon — open source
+      </span>
+
+      <h1 class="hero-title" id="hero-heading">
+        Static analysis<br />made <span>simple</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        <strong>bigua-analyzer</strong> is a lightweight, extensible open-source tool
+        for analyzing and improving your code quality — without the noise.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.76-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.807 5.624-5.48 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          Watch on GitHub
+        </a>
+        <a class="btn btn-outline" href="#features">
+          Learn more
+        </a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <h2 class="section-title" id="features-heading">Why bigua-analyzer?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">⚡</span>
+          <h3 class="feature-title">Fast by default</h3>
+          <p class="feature-desc">Incremental analysis so only changed files are re-checked on every run, keeping feedback loops short.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🔌</span>
+          <h3 class="feature-title">Extensible</h3>
+          <p class="feature-desc">A simple plugin API lets you write custom rules that fit your project's conventions and style guide.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🤫</span>
+          <h3 class="feature-title">Low noise</h3>
+          <p class="feature-desc">Smart suppression and severity levels so your team only sees what genuinely needs attention.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🔓</span>
+          <h3 class="feature-title">Open source</h3>
+          <p class="feature-desc">Fully open and MIT-licensed. Inspect it, fork it, contribute to it — no vendor lock-in.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🔗</span>
+          <h3 class="feature-title">CI-ready</h3>
+          <p class="feature-desc">Works out of the box with GitHub Actions, GitLab CI, and other popular pipelines via a single command.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">📊</span>
+          <h3 class="feature-title">Actionable reports</h3>
+          <p class="feature-desc">Export results as JSON, HTML, or SARIF. Integrates with code review tools to surface findings inline.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick-start snippet -->
+    <section class="snippet-section" aria-labelledby="quickstart-heading">
+      <h2 class="section-title" id="quickstart-heading">Quick start (coming soon)</h2>
+      <div class="code-block">
+        <pre aria-label="Installation and usage example"><span class="token-comment"># install</span>
+<span class="token-keyword">pip</span> install bigua-analyzer
+
+<span class="token-comment"># run against your project</span>
+<span class="token-keyword">bigua</span> analyze <span class="token-string">./src</span>
+
+<span class="token-comment"># or integrate with GitHub Actions</span>
+<span class="token-keyword">bigua</span> analyze <span class="token-string">./src</span> --format sarif --output results.sarif</pre>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>Built with ❤️ by <a href="https://github.com/icidade" target="_blank" rel="noopener noreferrer">icidade</a></span>
+    <span aria-hidden="true">·</span>
+    <span><a href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+    <span aria-hidden="true">·</span>
+    <span>MIT License</span>
+  </footer>
+
+</body>
+</html>
