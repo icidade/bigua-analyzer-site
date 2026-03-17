@@ -1,74 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data: https://github.com https://github-production-user-asset-6210df.s3.amazonaws.com; base-uri 'self'; form-action 'none'; frame-ancestors 'none'" />
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="description" content="Biguá Analyzer is an independent research initiative exploring software ecosystem health and security-relevant development signals in public GitHub repositories." />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Biguá-Analyzer</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .logo-img {
-      max-width: min(560px, 85vw);
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .tagline {
-      margin-top: 2.5rem;
-      font-size: clamp(1rem, 2.5vw, 1.25rem);
-      color: #aaa;
-      letter-spacing: 0.04em;
-    }
-
-    .badge {
-      display: inline-block;
-      margin-top: 2.5rem;
-      padding: 0.55rem 1.4rem;
-      border: 1px solid #2a6fc9;
-      border-radius: 999px;
-      color: #2a6fc9;
-      font-size: 0.85rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-  </style>
+  <title>Biguá Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="logo-wrapper">
-    <img
-      class="logo-img"
-      src="https://github.com/user-attachments/assets/81e676ff-7b8c-4c68-b47e-c4b7f60e75c6"
-      alt="Biguá-Analyzer — logotipo com ave em voo e nome do projeto"
-    />
-    <p class="tagline">A research tool that analyzes public GitHub repositories to extract engineering and security-relevant development metrics.</p>
-    <span class="badge">soon</span>
-  </div>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Biguá Analyzer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biguá Analyzer</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a class="btn btn-outline" href="#research">Research</a>
+        <a class="btn btn-outline" href="#contact">Contact</a>
+        <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Patreon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero site-shell">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Independent security research
+          </div>
+
+          <h1>Software ecosystems leave <span>measurable signals</span>.</h1>
+          <p class="lead">
+            Biguá Analyzer is an independent research initiative focused on exploring software ecosystem health and
+            security-relevant development dynamics in public GitHub repositories.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#research">About the research</a>
+            <a class="btn btn-outline" href="mailto:contact@bigua-analyzer.io">contact@bigua-analyzer.io</a>
+          </div>
+
+          <div class="badge-row" aria-label="Project highlights">
+            <span class="badge-pill">Public website live</span>
+            <span class="badge-pill">Repository opening planned for July 2026</span>
+            <span class="badge-pill">Independent, self-directed research</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Project overview">
+          <div class="logo-frame">
+            <img
+              src="https://github.com/user-attachments/assets/81e676ff-7b8c-4c68-b47e-c4b7f60e75c6"
+              alt="Biguá Analyzer logo with a bird in flight"
+            />
+          </div>
+          <p class="logo-caption">
+            A research-driven effort centered on repository dynamics, engineering signals, and ecosystem-level risk awareness.
+          </p>
+          <div class="hero-links">
+            <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Support on Patreon</a>
+            <a class="btn btn-outline" href="#contact">Contact</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section site-shell" id="research">
+      <h2 class="section-title">Research in progress</h2>
+      <p class="section-subtitle">
+        Biguá Analyzer is currently being developed as part of an ongoing independent research effort. The public
+        repository is expected to open in <span class="highlight">July 2026</span>. Until then, this page serves as the
+        official project presence and contact point.
+      </p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>What this project is about</h3>
+          <p>
+            The project investigates whether repository dynamics and engineering patterns can reveal meaningful signals
+            about ecosystem health and software security posture, without reducing the analysis to vulnerabilities alone.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Current status</h3>
+          <p>
+            The research is ongoing, the tooling is under active refinement, and the public-facing materials are being
+            prepared carefully so the repository can open with proper structure, documentation, and reproducibility.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Why the repository is not public yet</h3>
+          <p>
+            The work is being organized for a clean public release. That includes documentation, positioning, and a
+            presentation-ready first impression that reflects the seriousness of the research.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell" id="support">
+      <div class="card">
+        <h2 class="section-title">Support the project</h2>
+        <p class="section-subtitle">
+          If you would like to support independent research around software ecosystem health and security, Biguá Analyzer
+          is now on Patreon. Support helps sustain ongoing research, tooling evolution, and future publication of results.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Become a Patreon supporter</a>
+          <a href="https://img.shields.io/badge/Support-Patreon-ff424d?logo=patreon" target="_blank" rel="noreferrer noopener" aria-label="Patreon badge preview">
+            <img src="https://img.shields.io/badge/Support-Patreon-ff424d?logo=patreon" alt="Support on Patreon badge" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section site-shell" id="contact">
+      <div class="contact-grid">
+        <div class="card">
+          <h2 class="section-title">Contact</h2>
+          <ul class="list-clean">
+            <li>
+              Email: <a class="contact-link" href="mailto:contact@bigua-analyzer.io"><span class="inline-code">contact@bigua-analyzer.io</span></a>
+            </li>
+            <li>
+              Patreon: <a class="contact-link" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">patreon.com/bigua_analyzer</a>
+            </li>
+            <li>
+              Website: <a class="contact-link" href="https://bigua-analyzer.io" target="_blank" rel="noreferrer noopener">bigua-analyzer.io</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Notes</h2>
+          <ul class="list-clean">
+            <li>The public repository opening is currently planned for <span class="highlight">July 2026</span>.</li>
+            <li>This site is the official placeholder for the project while the research remains in active preparation.</li>
+            <li>Contact is open for sponsorship, collaboration, and general project inquiries.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
+      <span>
+        Contact: <a href="mailto:contact@bigua-analyzer.io">contact@bigua-analyzer.io</a>
+      </span>
+    </div>
+  </footer>
 </body>
 </html>
