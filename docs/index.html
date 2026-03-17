@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'self'; form-action 'none'; frame-ancestors 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data: https://github.com https://github-production-user-asset-6210df.s3.amazonaws.com; base-uri 'self'; form-action 'none'; frame-ancestors 'none'" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Biguá-Analyzer</title>
@@ -32,10 +32,6 @@
       padding: 2rem;
     }
 
-    .logo-wrapper {
-      animation: fadeIn 1.2s ease both;
-    }
-
     .logo-img {
       max-width: min(560px, 85vw);
       width: 100%;
@@ -49,7 +45,6 @@
       font-size: clamp(1rem, 2.5vw, 1.25rem);
       color: #aaa;
       letter-spacing: 0.04em;
-      animation: fadeIn 1.8s ease both;
     }
 
     .badge {
@@ -62,50 +57,18 @@
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      animation: fadeIn 2.2s ease both;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(18px); }
-      to   { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <div class="logo-wrapper">
-    <!-- Biguá-Analyzer logo — inline SVG so it works without external requests -->
-    <svg class="logo-img" viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title">
-      <title id="logo-title">Biguá-Analyzer — cormorant bird in flight with the project wordmark</title>
-      <!-- Bird sketch: cormorant in soaring flight (white outline, sketch style) -->
-      <g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-        <!-- Left wing top edge — long sweeping line from body to tip -->
-        <path d="M280,140 C255,132 220,120 185,110 C155,101 115,95 60,102"/>
-        <!-- Left wing bottom/trailing edge -->
-        <path d="M280,148 C258,145 230,138 200,133 C170,128 130,128 80,140 C70,143 62,144 60,102"/>
-        <!-- Right wing top edge -->
-        <path d="M280,140 C305,128 335,116 370,108 C405,100 450,96 510,106"/>
-        <!-- Right wing bottom/trailing edge -->
-        <path d="M280,148 C308,142 340,134 375,130 C410,126 455,130 510,106"/>
-        <!-- Neck and head going left and slightly up -->
-        <path d="M280,140 C272,130 262,122 252,116 C244,111 236,108 230,106"/>
-        <!-- Beak tip -->
-        <path d="M230,106 C224,104 216,104 210,107"/>
-        <!-- Tail feathers to the right -->
-        <path d="M280,148 C290,152 300,158 308,162 C315,165 322,166 330,162"/>
-        <path d="M308,162 C316,168 322,172 328,170"/>
-        <!-- Body fill hint — small oval stroke -->
-        <ellipse cx="278" cy="144" rx="14" ry="8"/>
-      </g>
-      <!-- Wordmark -->
-      <text x="280" y="215" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="46" font-weight="700">
-        <tspan fill="#2a6fc9">Biguá</tspan><tspan fill="#ffffff">-Analyzer</tspan>
-      </text>
-    </svg>
-    <p class="tagline">A socio-technical analyzer for open source supply chains.
-</br>
-GitHub:
-<a href="https://github.com/icidade/bigua-analyzer">https://github.com/icidade/bigua-analyzer</a></p>
-    <span class="badge">Soon</span>
+    <img
+      class="logo-img"
+      src="https://github.com/user-attachments/assets/81e676ff-7b8c-4c68-b47e-c4b7f60e75c6"
+      alt="Biguá-Analyzer — logotipo com ave em voo e nome do projeto"
+    />
+    <p class="tagline">Análise inteligente de dados de cidades</p>
+    <span class="badge">Em breve</span>
   </div>
 </body>
 </html>
