@@ -17,13 +17,17 @@
         <span>Biguá Analyzer</span>
       </a>
 
-      <nav class="header-nav" aria-label="Primary navigation">
-        <a class="btn btn-outline" href="#about">About</a>
-        <a class="btn btn-outline" href="research.html">Research</a>
-        <a class="btn btn-outline" href="#contact">Contact</a>
-        <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">X</a>
-        <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Patreon</a>
-      </nav>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="btn btn-outline" href="#about">About</a>
+          <a class="btn btn-outline" href="#repository">Repository</a>
+          <a class="btn btn-outline" href="research.html">Research</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+          <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">X</a>
+          <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Patreon</a>
+        </nav>
+      </details>
     </div>
   </header>
 
@@ -45,13 +49,13 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">View repository</a>
             <a class="btn btn-outline" href="research.html">Research overview</a>
-            <a class="btn btn-outline" href="mailto:contact@bigua-analyzer.io">contact@bigua-analyzer.io</a>
+            <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">Latest releases</a>
           </div>
 
           <div class="badge-row" aria-label="Project highlights">
             <span class="badge-pill">Public repository available</span>
-            <span class="badge-pill">Independent, self-directed research</span>
-            <span class="badge-pill">Focused on structural OSS analysis</span>
+            <span class="badge-pill">10 public releases</span>
+            <span class="badge-pill">Metrics, reports, and plots</span>
           </div>
         </div>
 
@@ -63,7 +67,8 @@
             />
           </div>
           <p class="logo-caption">
-            A research-driven effort centered on repository dynamics, contributor structure, and ecosystem-level risk awareness.
+            A research-driven effort centered on repository dynamics, contributor structure, ecosystem-level risk awareness,
+            and careful interpretation of modern development signals.
           </p>
           <div class="hero-links">
             <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Support on Patreon</a>
@@ -102,8 +107,43 @@
         <article class="card">
           <h3>Built in the open</h3>
           <p>
-            The repository is public and includes the analyzer itself, documentation, releases, and supporting materials for
-            the broader research effort behind the project.
+            The public repository includes the analyzer itself, research-oriented documentation, release history, community
+            guidance, and supporting materials for the broader research effort behind the project.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell" id="repository">
+      <h2 class="section-title">Repository highlights</h2>
+      <p class="section-subtitle">
+        The live repository now exposes more than a simple code drop: it includes release history, citation metadata,
+        community guidance, security reporting information, and multiple output modes for analysis and reporting.
+      </p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Public releases and documentation</h3>
+          <p>
+            The repository currently publishes tagged releases and ships dedicated materials such as a changelog, metrics
+            documentation, and project docs that explain how the framework should be interpreted and used.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Operational outputs</h3>
+          <p>
+            Beyond raw metrics extraction, the tool supports AI-assisted report generation and direct plot generation from CSV
+            outputs, making the project more tangible for researchers and practitioners exploring repository datasets.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Open project signals</h3>
+          <p>
+            The repo includes <span class="inline-code">CITATION.cff</span>, <span class="inline-code">CONTRIBUTING.md</span>,
+            <span class="inline-code">CODE_OF_CONDUCT.md</span>, <span class="inline-code">SECURITY.md</span>, and an MIT
+            license, which together make the project look more complete and publication-ready.
           </p>
         </article>
       </div>
@@ -131,10 +171,10 @@
         <div class="card feature-card">
           <h2 class="section-title">What you will find</h2>
           <ul class="list-clean">
-            <li>Open-source analyzer focused on public GitHub repositories</li>
-            <li>Documentation for metrics and project positioning</li>
-            <li>Release artifacts and supplementary research materials</li>
-            <li>Independent work at the intersection of OSS health and security</li>
+            <li>CLI analysis for single repos or repository datasets</li>
+            <li>CSV and JSONL outputs for downstream research workflows</li>
+            <li>AI-assisted report generation in Markdown and HTML</li>
+            <li>Research-ready plot generation from analyzer CSV output</li>
           </ul>
         </div>
       </div>
@@ -149,6 +189,22 @@
             Browse the public codebase, documentation, and project history on GitHub.
           </p>
           <p><a href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">github.com/icidade/bigua-analyzer</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Releases</h3>
+          <p>
+            Track tagged versions, including the latest public release line for the analyzer.
+          </p>
+          <p><a href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">GitHub releases</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Research docs</h3>
+          <p>
+            Repository materials include metrics documentation, supporting project docs, and citation metadata for academic use.
+          </p>
+          <p><a href="https://github.com/icidade/bigua-analyzer/blob/main/CITATION.cff" target="_blank" rel="noreferrer noopener">CITATION.cff</a></p>
         </article>
 
         <article class="card">
@@ -192,9 +248,9 @@
         <div class="card">
           <h2 class="section-title">Notes</h2>
           <ul class="list-clean">
-            <li>The site intentionally keeps the research description at a high level.</li>
-            <li>Detailed results, artifacts, and documentation live in the public repository and releases.</li>
-            <li>Contact is open for collaboration, sponsorship, and general project inquiries.</li>
+            <li>The site keeps the research description at a high level and points visitors to the public repository for depth.</li>
+            <li>Detailed results, release artifacts, and documentation live in GitHub so the website can stay lightweight.</li>
+            <li>Contact is open for collaboration, sponsorship, citation, and general project inquiries.</li>
           </ul>
         </div>
       </div>

@@ -17,13 +17,17 @@
         <span>Biguá Analyzer</span>
       </a>
 
-      <nav class="header-nav" aria-label="Primary navigation">
-        <a class="btn btn-outline" href="index.html">Home</a>
-        <a class="btn btn-outline" href="#overview">Overview</a>
-        <a class="btn btn-outline" href="#scope">Scope</a>
-        <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">X</a>
-        <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Patreon</a>
-      </nav>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="btn btn-outline" href="index.html">Home</a>
+          <a class="btn btn-outline" href="#overview">Overview</a>
+          <a class="btn btn-outline" href="#scope">Scope</a>
+          <a class="btn btn-outline" href="#repository-materials">Materials</a>
+          <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">X</a>
+          <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Patreon</a>
+        </nav>
+      </details>
     </div>
   </header>
 
@@ -94,6 +98,30 @@
       </div>
     </section>
 
+    <section class="section site-shell" id="repository-materials">
+      <div class="feature-grid">
+        <div class="card feature-card">
+          <h2 class="section-title">Repository-backed materials</h2>
+          <p>
+            The public repository now functions as the main source of truth for the project: it contains tagged releases,
+            metrics documentation, project docs, community files, security reporting guidance, and citation metadata.
+          </p>
+          <p>
+            That makes this website a concise entry point rather than the full publication surface. Visitors who want practical
+            depth can move directly into the repository, release history, or supporting docs.
+          </p>
+        </div>
+
+        <div class="card feature-card">
+          <h2 class="section-title">Concrete outputs</h2>
+          <p>
+            In addition to repository analysis itself, the tool produces CSV and JSONL outputs, can render AI-assisted reports,
+            and can generate research-ready plots directly from analyzer CSV files.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="section site-shell">
       <div class="feature-grid">
         <div class="card feature-card">
@@ -121,7 +149,7 @@
         <div class="hero-actions compact-actions">
           <a class="btn btn-primary" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">Public repository</a>
           <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">Releases</a>
-          <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">X</a>
+          <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer/blob/main/CITATION.cff" target="_blank" rel="noreferrer noopener">Citation</a>
           <a class="btn btn-outline" href="mailto:contact@bigua-analyzer.io">Contact</a>
         </div>
       </div>
