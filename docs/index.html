@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Biguá Analyzer is an open-source research project exploring structural signals of open source software health, resilience, and security-relevant repository dynamics." />
+  <meta name="description" content="Biguá Analyzer apresenta a pesquisa Beyond CVEs, uma abordagem prática para interpretar risco estrutural em projetos open source na era da IA." />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Biguá Analyzer</title>
+  <title>Biguá Analyzer · Beyond CVEs</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,11 +19,11 @@
 
       <details class="nav-disclosure">
         <summary class="nav-toggle">Menu</summary>
-        <nav class="header-nav" aria-label="Primary navigation">
-          <a class="btn btn-outline" href="#about">About</a>
-          <a class="btn btn-outline" href="#repository">Repository</a>
-          <a class="btn btn-outline" href="research.html">Research</a>
-          <a class="btn btn-outline" href="#contact">Contact</a>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <a class="btn btn-outline" href="#pesquisa">Pesquisa</a>
+          <a class="btn btn-outline" href="#achados">Achados</a>
+          <a class="btn btn-outline" href="#uso">Uso prático</a>
+          <a class="btn btn-outline" href="research.html">Página por tópicos</a>
           <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">X</a>
           <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Patreon</a>
         </nav>
@@ -37,222 +37,183 @@
         <div class="hero-copy">
           <div class="eyebrow">
             <span class="eyebrow-dot" aria-hidden="true"></span>
-            Open-source independent research
+            Pesquisa publicada · Março de 2026
           </div>
 
-          <h1>Open source projects leave <span>structural signals</span>.</h1>
+          <h1>Beyond CVEs: risco estrutural em OSS na era da IA.</h1>
           <p class="lead">
-            Biguá Analyzer is an open-source research project focused on repository structure, contributor dynamics,
-            and security-relevant signals that may help teams reason about software ecosystem resilience beyond CVEs alone.
+            A pesquisa apresenta o Biguá Analyzer como uma abordagem open source para avaliar sinais estruturais de projetos
+            open source que não aparecem quando a análise para em CVEs, advisories ou indicadores estáticos de postura.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">View repository</a>
-            <a class="btn btn-outline" href="research.html">Research overview</a>
-            <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">Latest releases</a>
+            <a class="btn btn-primary" href="research.html">Explorar os tópicos</a>
+            <a class="btn btn-outline" href="Beyond-CVEs-OSS-Risk-AI-Era.pdf" target="_blank" rel="noreferrer noopener">Paper em PDF</a>
+            <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">Repositório</a>
+            <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">Releases</a>
           </div>
 
-          <div class="badge-row" aria-label="Project highlights">
-            <span class="badge-pill">Public repository available</span>
-            <span class="badge-pill">10 public releases</span>
-            <span class="badge-pill">Metrics, reports, and plots</span>
+          <div class="badge-row" aria-label="Resumo da pesquisa">
+            <span class="badge-pill">42 repositórios analisados</span>
+            <span class="badge-pill">Triagem rápida + histórico completo</span>
+            <span class="badge-pill">Foco em AppSec e supply chain</span>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Project overview">
+        <aside class="hero-panel research-snapshot" aria-label="Resumo rápido">
           <div class="logo-frame">
             <img
               src="https://github.com/user-attachments/assets/81e676ff-7b8c-4c68-b47e-c4b7f60e75c6"
-              alt="Biguá Analyzer logo with a bird in flight"
+              alt="Logo do Biguá Analyzer com uma ave em voo"
             />
           </div>
-          <p class="logo-caption">
-            A research-driven effort centered on repository dynamics, contributor structure, ecosystem-level risk awareness,
-            and careful interpretation of modern development signals.
-          </p>
-          <div class="hero-links">
-            <a class="btn btn-patreon" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Support on Patreon</a>
-            <a class="btn btn-outline" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">Follow on X</a>
-            <a class="btn btn-outline" href="#contact">Contact</a>
+          <div class="snapshot-list">
+            <div>
+              <span class="metric-value">0.4526</span>
+              <span class="metric-label">mediana do score de influência de IA</span>
+            </div>
+            <div>
+              <span class="metric-value">78.57%</span>
+              <span class="metric-label">das triagens recentes em verde</span>
+            </div>
+            <div>
+              <span class="metric-value">4</span>
+              <span class="metric-label">outliers estruturais com alto desvio</span>
+            </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section site-shell" id="about">
-      <h2 class="section-title">What Biguá Analyzer is</h2>
+    <section class="section site-shell" id="pesquisa">
+      <h2 class="section-title">O que a pesquisa investiga</h2>
       <p class="section-subtitle">
-        Biguá Analyzer was created to study whether public repository data can reveal meaningful structural signals about
-        open source software health, continuity, and dependency risk. The project is intentionally centered on sociotechnical
-        structure rather than code authorship claims or vulnerability counts alone.
+        A pergunta central não é se a IA está presente no desenvolvimento. A pergunta útil para AppSec é se a IA mudou os
+        sinais estruturais que ajudam a julgar saúde, continuidade e risco de dependências open source.
       </p>
 
       <div class="grid-3">
         <article class="card">
-          <h3>Structural by design</h3>
+          <h3>Além de CVEs</h3>
           <p>
-            The project looks at patterns such as contribution concentration, contributor redundancy, turnover, maintenance
-            dynamics, and other repository-visible signals that can inform how resilient or fragile a project may be.
+            Vulnerabilidades importam, mas não explicam concentração de mantenedores, redundância de conhecimento,
+            continuidade histórica ou capacidade de resposta sob pressão.
           </p>
         </article>
 
         <article class="card">
-          <h3>Security-relevant framing</h3>
+          <h3>Estrutura antes de autoria</h3>
           <p>
-            The goal is not to replace vulnerability analysis. It is to complement it by giving security and engineering teams
-            another lens for thinking about dependency evaluation, maintainer continuity, and ecosystem-level risk.
+            O trabalho evita tratar o Biguá Analyzer como detector de autoria por IA. O foco está em como o repositório se
+            comporta como sistema sociotécnico.
           </p>
         </article>
 
         <article class="card">
-          <h3>Built in the open</h3>
+          <h3>Leitura em duas camadas</h3>
           <p>
-            The public repository includes the analyzer itself, research-oriented documentation, release history, community
-            guidance, and supporting materials for the broader research effort behind the project.
+            A triagem por janela recente prioriza casos. Dependências críticas ou com grande desvio devem subir para análise
+            de histórico completo.
           </p>
         </article>
       </div>
     </section>
 
-    <section class="section site-shell" id="repository">
-      <h2 class="section-title">Repository highlights</h2>
-      <p class="section-subtitle">
-        The live repository now exposes more than a simple code drop: it includes release history, citation metadata,
-        community guidance, security reporting information, and multiple output modes for analysis and reporting.
-      </p>
-
-      <div class="grid-3">
-        <article class="card">
-          <h3>Public releases and documentation</h3>
-          <p>
-            The repository currently publishes tagged releases and ships dedicated materials such as a changelog, metrics
-            documentation, and project docs that explain how the framework should be interpreted and used.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Operational outputs</h3>
-          <p>
-            Beyond raw metrics extraction, the tool supports AI-assisted report generation and direct plot generation from CSV
-            outputs, making the project more tangible for researchers and practitioners exploring repository datasets.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Open project signals</h3>
-          <p>
-            The repo includes <span class="inline-code">CITATION.cff</span>, <span class="inline-code">CONTRIBUTING.md</span>,
-            <span class="inline-code">CODE_OF_CONDUCT.md</span>, <span class="inline-code">SECURITY.md</span>, and an MIT
-            license, which together make the project look more complete and publication-ready.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section site-shell" id="research-summary">
+    <section class="section site-shell" id="achados">
       <div class="feature-grid">
-        <div class="card feature-card">
-          <h2 class="section-title">Research overview</h2>
-          <p>
-            The broader research asks whether the rise of AI-assisted development is changing the structural signals that define
-            open source project resilience and fragility. The emphasis is on how repositories behave as sociotechnical systems,
-            not on trying to prove authorship at the commit level.
-          </p>
-          <p>
-            Biguá Analyzer was developed as the analytical framework for that work, combining classical project-structure metrics
-            with a documented inference layer intended to help interpret modern repository behavior more carefully.
-          </p>
-          <div class="hero-actions compact-actions">
-            <a class="btn btn-primary" href="research.html">Read the overview</a>
-            <a class="btn btn-outline" href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">Project releases</a>
+        <div>
+          <h2 class="section-title">Achados principais</h2>
+          <div class="finding-list">
+            <article class="finding-item">
+              <span>01</span>
+              <p>A influência de IA aparece como camada ampla no ecossistema, mas não substitui os indicadores clássicos de resiliência.</p>
+            </article>
+            <article class="finding-item">
+              <span>02</span>
+              <p>Concentração de contribuição, redundância e participação histórica continuam explicando melhor fragilidade ou robustez.</p>
+            </article>
+            <article class="finding-item">
+              <span>03</span>
+              <p>Janelas recentes podem fazer projetos maduros parecerem mais uniformes, limpos ou estáveis do que sua estrutura histórica sugere.</p>
+            </article>
           </div>
         </div>
 
-        <div class="card feature-card">
-          <h2 class="section-title">What you will find</h2>
-          <ul class="list-clean">
-            <li>CLI analysis for single repos or repository datasets</li>
-            <li>CSV and JSONL outputs for downstream research workflows</li>
-            <li>AI-assisted report generation in Markdown and HTML</li>
-            <li>Research-ready plot generation from analyzer CSV output</li>
-          </ul>
-        </div>
+        <aside class="callout-panel">
+          <h3>Conclusão curta</h3>
+          <p>
+            A IA muda como alguns sinais do repositório parecem. A estrutura ainda determina o que esses sinais significam.
+          </p>
+          <a class="text-link" href="research.html#conclusao">Ver a leitura por tópicos</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section site-shell" id="uso">
+      <h2 class="section-title">Como aplicar em revisão de dependências</h2>
+      <div class="process-strip">
+        <article>
+          <span class="step-kicker">1</span>
+          <h3>Triar</h3>
+          <p>Use análise rápida para comparar muitas dependências e localizar sinais de baixa confiança ou desvios incomuns.</p>
+        </article>
+        <article>
+          <span class="step-kicker">2</span>
+          <h3>Escalar</h3>
+          <p>Leve projetos críticos, sensíveis ou de alto desvio para análise de histórico completo antes da decisão de confiança.</p>
+        </article>
+        <article>
+          <span class="step-kicker">3</span>
+          <h3>Interpretar</h3>
+          <p>Combine CVEs, postura, releases e sinais estruturais para entender risco de continuidade e resposta.</p>
+        </article>
       </div>
     </section>
 
     <section class="section site-shell" id="links">
-      <h2 class="section-title">Project links</h2>
+      <h2 class="section-title">Links úteis</h2>
       <div class="grid-3">
         <article class="card">
-          <h3>Repository</h3>
-          <p>
-            Browse the public codebase, documentation, and project history on GitHub.
-          </p>
+          <h3>Repositório</h3>
+          <p>Código, documentação, histórico e materiais do projeto.</p>
           <p><a href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">github.com/icidade/bigua-analyzer</a></p>
         </article>
 
         <article class="card">
           <h3>Releases</h3>
-          <p>
-            Track tagged versions, including the latest public release line for the analyzer.
-          </p>
+          <p>Versões publicadas e artefatos do Biguá Analyzer.</p>
           <p><a href="https://github.com/icidade/bigua-analyzer/releases" target="_blank" rel="noreferrer noopener">GitHub releases</a></p>
         </article>
 
         <article class="card">
-          <h3>Research docs</h3>
-          <p>
-            Repository materials include metrics documentation, supporting project docs, and citation metadata for academic use.
-          </p>
+          <h3>Citação</h3>
+          <p>Metadados para referência acadêmica e técnica.</p>
           <p><a href="https://github.com/icidade/bigua-analyzer/blob/main/CITATION.cff" target="_blank" rel="noreferrer noopener">CITATION.cff</a></p>
         </article>
 
         <article class="card">
+          <h3>Paper</h3>
+          <p>Versão integral da pesquisa Beyond CVEs em PDF.</p>
+          <p><a href="Beyond-CVEs-OSS-Risk-AI-Era.pdf" target="_blank" rel="noreferrer noopener">Abrir PDF</a></p>
+        </article>
+
+        <article class="card">
           <h3>Support</h3>
-          <p>
-            Support helps sustain independent research, tooling refinement, and future public materials around the project.
-          </p>
+          <p>Apoie pesquisa independente, melhorias do framework e novos materiais públicos.</p>
           <p><a href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">patreon.com/bigua_analyzer</a></p>
         </article>
 
         <article class="card">
           <h3>Social</h3>
-          <p>
-            Follow project updates and public notes on X.
-          </p>
+          <p>Acompanhe notas públicas e atualizações do projeto.</p>
           <p><a href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">x.com/bigua_analyzer</a></p>
         </article>
 
         <article class="card">
-          <h3>Website</h3>
-          <p>
-            This site is the public landing page for the project and a lightweight index to the main resources.
-          </p>
-          <p><a href="https://bigua-analyzer.io" target="_blank" rel="noreferrer noopener">bigua-analyzer.io</a></p>
+          <h3>Contato</h3>
+          <p>Colaboração, citação, patrocínio ou dúvidas sobre a pesquisa.</p>
+          <p><a href="mailto:contact@bigua-analyzer.io">contact@bigua-analyzer.io</a></p>
         </article>
-      </div>
-    </section>
-
-    <section class="section site-shell" id="contact">
-      <div class="contact-grid">
-        <div class="card">
-          <h2 class="section-title">Contact</h2>
-          <ul class="list-clean">
-            <li>Email: <a class="contact-link" href="mailto:contact@bigua-analyzer.io"><span class="inline-code">contact@bigua-analyzer.io</span></a></li>
-            <li>GitHub: <a class="contact-link" href="https://github.com/icidade/bigua-analyzer" target="_blank" rel="noreferrer noopener">icidade/bigua-analyzer</a></li>
-            <li>Patreon: <a class="contact-link" href="https://patreon.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">patreon.com/bigua_analyzer</a></li>
-            <li>X: <a class="contact-link" href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">x.com/bigua_analyzer</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2 class="section-title">Notes</h2>
-          <ul class="list-clean">
-            <li>The site keeps the research description at a high level and points visitors to the public repository for depth.</li>
-            <li>Detailed results, release artifacts, and documentation live in GitHub so the website can stay lightweight.</li>
-            <li>Contact is open for collaboration, sponsorship, citation, and general project inquiries.</li>
-          </ul>
-        </div>
       </div>
     </section>
   </main>
@@ -260,7 +221,7 @@
   <footer>
     <div class="footer-inner">
       <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
-      <span>Contact: <a href="mailto:contact@bigua-analyzer.io">contact@bigua-analyzer.io</a></span>
+      <span>Website: <a href="https://bigua-analyzer.io" target="_blank" rel="noreferrer noopener">bigua-analyzer.io</a></span>
       <span>X: <a href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">@bigua_analyzer</a></span>
     </div>
   </footer>
