@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Overview of Beyond CVEs, the Biguá Analyzer study on structural OSS risk in the AI era." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta property="og:title" content="Beyond CVEs · Biguá Analyzer Research" />
+  <meta property="og:description" content="A practical approach to interpreting structural OSS risk in the AI era." />
+  <meta property="og:type" content="article" />
+  <title>Research · Beyond CVEs · Biguá Analyzer</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html" aria-label="Biguá Analyzer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biguá Analyzer</span>
+      </a>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link is-active" href="./">Research</a>
+          <a class="nav-link" href="methodology/">Methodology</a>
+          <a class="nav-link" href="findings/">Findings</a>
+          <a class="nav-link" href="fast-vs-full/">Fast vs Full</a>
+          <a class="nav-link" href="appsec/">AppSec</a>
+          <a class="nav-link" href="materials/">Materials</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero site-shell">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Published research · March 23, 2026
+          </div>
+          <h1>Beyond CVEs</h1>
+          <p class="lead">A practical approach to interpreting structural OSS risk in the AI era.</p>
+          <div class="thesis-card">
+            AI changes how some repository signals look, but structure still determines what they mean.
+          </div>
+          <p class="page-lead">
+            The study presents Biguá Analyzer as an open-source framework for examining structural OSS indicators such as
+            contribution concentration, contributor redundancy, turnover, activity dynamics, historical participation, and inferred AI influence.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="findings/">Explore the findings</a>
+            <a class="btn btn-outline" href="../Beyond-CVEs-OSS-Risk-AI-Era.pdf" target="_blank" rel="noreferrer noopener">Download the paper</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <h2 class="panel-title">Study Details</h2>
+          <dl class="detail-list">
+            <div><dt>Title</dt><dd>Beyond CVEs: A Practical Approach to Interpreting Structural OSS Risk in the AI Era</dd></div>
+            <div><dt>Author</dt><dd>Irlan de Alvarenga Cidade</dd></div>
+            <div><dt>Date</dt><dd>March 23, 2026</dd></div>
+            <div><dt>Role</dt><dd>Independent researcher, creator of Biguá Analyzer</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Research Question</h2>
+      <p class="section-subtitle">
+        Has the transition from pre-AI to AI-assisted development changed the structural signals that define OSS project
+        health and risk?
+      </p>
+
+      <div class="metric-grid five-up">
+        <article class="metric-card">
+          <span class="metric-value">42</span>
+          <span class="metric-label">repositories analyzed</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">5</span>
+          <span class="metric-label">language ecosystems</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">2</span>
+          <span class="metric-label">analysis modes</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">4</span>
+          <span class="metric-label">high-deviation structural outliers</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">≈0.453</span>
+          <span class="metric-label">median inferred AI influence</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Four Main Findings</h2>
+      <div class="finding-list">
+        <article class="finding-item">
+          <span>01</span>
+          <p>Structural metrics remain the strongest observed explanatory layer for OSS resilience and fragility.</p>
+        </article>
+        <article class="finding-item">
+          <span>02</span>
+          <p>Contribution concentration, contributor redundancy, and long-tail historical participation remain more explanatory than AI-adjacent signals alone.</p>
+        </article>
+        <article class="finding-item">
+          <span>03</span>
+          <p>AI-related patterns are widespread, but they are better understood as an ambient capability layer than a primary structural driver.</p>
+        </article>
+        <article class="finding-item">
+          <span>04</span>
+          <p>Recent-window analysis is useful for screening, but high-impact or high-deviation dependencies need full-history structural review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Explore the Research</h2>
+      <div class="nav-card-grid">
+        <a class="nav-card" href="methodology/">
+          <span>Methodology and metrics</span>
+          <small>Repository selection, GitHub data sources, structural metrics, AI influence, and confidence.</small>
+        </a>
+        <a class="nav-card" href="findings/">
+          <span>Findings</span>
+          <small>A visual summary of the main results and what the traffic light does and does not mean.</small>
+        </a>
+        <a class="nav-card" href="fast-vs-full/">
+          <span>Fast mode versus full history</span>
+          <small>Why recent-window screening and full-history analysis can produce different readings.</small>
+        </a>
+        <a class="nav-card" href="appsec/">
+          <span>AppSec implications</span>
+          <small>A practical decision model for dependency review and supply-chain assessment.</small>
+        </a>
+        <a class="nav-card" href="materials/">
+          <span>Research materials</span>
+          <small>Paper, repository, releases, datasets, citation metadata, metrics docs, and contact links.</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
+      <span><a href="materials/">Research materials</a></span>
+      <span><a href="https://x.com/bigua_analyzer" target="_blank" rel="noreferrer noopener">@bigua_analyzer</a></span>
+    </div>
+  </footer>
+</body>
+</html>

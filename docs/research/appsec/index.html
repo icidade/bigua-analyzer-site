@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Practical AppSec implications from the Biguá Analyzer research on structural OSS risk." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta property="og:title" content="AppSec Implications · Biguá Analyzer Research" />
+  <meta property="og:description" content="A three-stage model for using structural repository signals in dependency review." />
+  <meta property="og:type" content="article" />
+  <title>AppSec Implications · Biguá Analyzer Research</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="Biguá Analyzer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biguá Analyzer</span>
+      </a>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link" href="../">Research</a>
+          <a class="nav-link" href="../methodology/">Methodology</a>
+          <a class="nav-link" href="../findings/">Findings</a>
+          <a class="nav-link" href="../fast-vs-full/">Fast vs Full</a>
+          <a class="nav-link is-active" href="./">AppSec</a>
+          <a class="nav-link" href="../materials/">Materials</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="section site-shell page-hero">
+      <div class="page-hero-inner">
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>AppSec implications</div>
+        <h1 class="page-title">Use structure as a dependency-review layer.</h1>
+        <p class="page-lead">
+          CVEs, advisories, and posture checks remain important, but they do not capture maintainership concentration,
+          knowledge redundancy, contributor continuity, or historical dependency on a narrow contributor base.
+        </p>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">A Three-Stage Decision Model</h2>
+      <div class="process-strip">
+        <article>
+          <span class="step-kicker">1</span>
+          <h3>Screen recent repository signals</h3>
+          <p>Use fast mode to compare many dependencies and identify cases that deserve closer structural attention.</p>
+        </article>
+        <article>
+          <span class="step-kicker">2</span>
+          <h3>Evaluate confidence and deviation</h3>
+          <p>Read traffic-light output as signal quality and interpretive confidence, not as repository safety.</p>
+        </article>
+        <article>
+          <span class="step-kicker">3</span>
+          <h3>Escalate sensitive dependencies</h3>
+          <p>Move critical, unusual, or high-impact cases into full-history review before making trust decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="comparison-panels">
+        <article class="callout-panel">
+          <h2>What changed</h2>
+          <ul class="clean-list">
+            <li>Recent stylistic regularity is less informative.</li>
+            <li>Low recent turnover is not a sufficient indicator of resilience.</li>
+            <li>Modern activity can appear more uniform without changing historical structure.</li>
+          </ul>
+        </article>
+        <article class="callout-panel cool">
+          <h2>What did not change</h2>
+          <ul class="clean-list">
+            <li>Concentration still matters.</li>
+            <li>Redundancy still matters.</li>
+            <li>Long-tail participation still matters.</li>
+            <li>Project structure remains more explanatory than AI presence alone.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">What Structural Review Adds</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Maintainer concentration</h3>
+          <p>Structural metrics help identify when responsibility appears concentrated in a narrow contributor base.</p>
+        </article>
+        <article class="card">
+          <h3>Knowledge redundancy</h3>
+          <p>Contributor redundancy and bus factor provide context about how distributed project knowledge appears to be.</p>
+        </article>
+        <article class="card">
+          <h3>Contributor continuity</h3>
+          <p>Historical participation and churn help distinguish durable structure from a favorable recent snapshot.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="warning-note">
+        <h2>Guardrail</h2>
+        <p>
+          Biguá Analyzer should not be used as a vulnerability scanner, an absolute risk score, an AI-authorship detector, or
+          a system that labels repositories as safe or unsafe.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
+      <span><a href="../methodology/">Methodology</a></span>
+      <span><a href="../materials/">Research materials</a></span>
+    </div>
+  </footer>
+</body>
+</html>

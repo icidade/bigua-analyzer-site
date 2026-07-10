@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Primary findings from the Biguá Analyzer research on structural OSS risk and AI-era repository interpretation." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta property="og:title" content="Findings · Biguá Analyzer Research" />
+  <meta property="og:description" content="Structural metrics, contributor redundancy, AI influence, long-tail participation, and traffic-light confidence." />
+  <meta property="og:type" content="article" />
+  <title>Findings · Biguá Analyzer Research</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="Biguá Analyzer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biguá Analyzer</span>
+      </a>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link" href="../">Research</a>
+          <a class="nav-link" href="../methodology/">Methodology</a>
+          <a class="nav-link is-active" href="./">Findings</a>
+          <a class="nav-link" href="../fast-vs-full/">Fast vs Full</a>
+          <a class="nav-link" href="../appsec/">AppSec</a>
+          <a class="nav-link" href="../materials/">Materials</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="section site-shell page-hero">
+      <div class="page-hero-inner">
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Findings</div>
+        <h1 class="page-title">Structure remains the strongest explanatory layer.</h1>
+        <p class="page-lead">
+          The study found widespread AI-related patterns, but the clearest distinctions still came from concentration,
+          redundancy, contributor breadth, and historical participation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="finding-list">
+        <article class="finding-item">
+          <span>01</span>
+          <p>Structural metrics remain the strongest explanatory layer.</p>
+        </article>
+        <article class="finding-item">
+          <span>02</span>
+          <p>Higher contribution inequality generally corresponds to lower effective contributor redundancy.</p>
+        </article>
+        <article class="finding-item">
+          <span>03</span>
+          <p>AI-related patterns are widespread but are not the primary structural differentiator.</p>
+        </article>
+        <article class="finding-item">
+          <span>04</span>
+          <p>Historical long-tail participation remains important for resilience.</p>
+        </article>
+        <article class="finding-item">
+          <span>05</span>
+          <p>The traffic light measures confidence in the reading, not repository safety.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Research Visuals</h2>
+      <div class="visual-grid">
+        <article class="chart-card">
+          <h3>Contribution Inequality and Redundancy</h3>
+          <div class="relationship-chart" role="img" aria-label="Conceptual chart showing the observed relationship that higher contribution inequality generally corresponds to lower contributor redundancy.">
+            <div class="axis y-axis">Higher redundancy</div>
+            <div class="axis x-axis">Higher concentration</div>
+            <div class="trend-line" aria-hidden="true"></div>
+            <span class="trend-label high">Distributed participation</span>
+            <span class="trend-label low">Concentrated dependency</span>
+          </div>
+          <p>
+            The paper reports that higher contribution inequality is generally associated with lower contributor redundancy.
+          </p>
+          <p class="caption">
+            Caption: This visual summarizes the reported relationship. It does not redraw repository-level scatter points because original chart assets or underlying per-repository data were not present in this site repository.
+          </p>
+        </article>
+
+        <article class="chart-card">
+          <h3>Traffic-Light Distribution</h3>
+          <div class="bar-chart" role="img" aria-label="Fast analysis traffic-light distribution: green 78.57 percent, yellow 16.67 percent, orange 4.76 percent, red 0 percent.">
+            <div class="bar-row"><span>Green</span><div class="bar-track"><span class="bar green" style="width:78.57%"></span></div><strong>78.57%</strong></div>
+            <div class="bar-row"><span>Yellow</span><div class="bar-track"><span class="bar yellow" style="width:16.67%"></span></div><strong>16.67%</strong></div>
+            <div class="bar-row"><span>Orange</span><div class="bar-track"><span class="bar orange" style="width:4.76%"></span></div><strong>4.76%</strong></div>
+            <div class="bar-row"><span>Red</span><div class="bar-track"><span class="bar red" style="width:0%"></span></div><strong>0%</strong></div>
+          </div>
+          <p>
+            Most fast-mode readings landed in the green confidence class, with a smaller yellow and orange share and no red class in the reported table.
+          </p>
+          <p class="caption">
+            Caption: The traffic light describes confidence in the structural reading. It does not say that green repositories are secure or that orange repositories are unsafe.
+          </p>
+        </article>
+
+        <article class="chart-card">
+          <h3>Inferred AI Influence</h3>
+          <div class="single-metric" role="img" aria-label="Median inferred AI influence score approximately 0.453 across the fast analysis.">
+            <span>≈0.453</span>
+            <small>median inferred AI influence</small>
+          </div>
+          <p>
+            AI influence signals appear widespread in the analyzed set, but the study does not treat them as direct authorship proof.
+          </p>
+          <p class="caption">
+            Caption: The score is an inferred, reproducible analytical layer. It should not be read as evidence that specific commits were written by AI.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="quote-panel">
+        <p>AI behaves more like an ambient capability layer than a primary structural driver.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
+      <span><a href="../fast-vs-full/">Fast vs full history</a></span>
+      <span><a href="../materials/">Research materials</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Fast mode versus full-history analysis in the Biguá Analyzer research, featuring httpx and cobra methodological examples." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta property="og:title" content="Fast vs Full · Biguá Analyzer Research" />
+  <meta property="og:description" content="Why recent-window screening and full-history analysis answer different structural questions." />
+  <meta property="og:type" content="article" />
+  <title>Fast vs Full · Biguá Analyzer Research</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="Biguá Analyzer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biguá Analyzer</span>
+      </a>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link" href="../">Research</a>
+          <a class="nav-link" href="../methodology/">Methodology</a>
+          <a class="nav-link" href="../findings/">Findings</a>
+          <a class="nav-link is-active" href="./">Fast vs Full</a>
+          <a class="nav-link" href="../appsec/">AppSec</a>
+          <a class="nav-link" href="../materials/">Materials</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="section site-shell page-hero">
+      <div class="page-hero-inner">
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Method boundary</div>
+        <h1 class="page-title">Fast mode and full mode observe different temporal questions.</h1>
+        <p class="page-lead">
+          The study reran selected high-deviation cases in full-history mode to test whether recent-window readings represented
+          the deeper structural profile of mature projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="quote-panel">
+        <p>Fast mode and full mode are not contradictory. They observe different temporal questions.</p>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Why These Cases Were Rerun</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>encode/httpx</h3>
+          <p>
+            The project was used as a methodological example because the recent-window reading differed meaningfully from its
+            full-history structural profile. It should not be described as insecure because of this comparison.
+          </p>
+        </article>
+        <article class="card">
+          <h3>spf13/cobra</h3>
+          <p>
+            The same boundary appears in another mature project: recent activity can look more AI-shaped or less volatile than
+            the long-term contributor structure suggests.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Fast / Full Comparison</h2>
+      <div class="table-wrap" role="region" aria-label="Fast and full-history comparison table" tabindex="0">
+        <table class="research-table">
+          <caption>
+            Metric comparison from the paper. Values are methodological examples and are not security ratings.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Metric</th>
+              <th scope="col">httpx fast</th>
+              <th scope="col">httpx full</th>
+              <th scope="col">cobra fast</th>
+              <th scope="col">cobra full</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Top contributor share</th><td>0.3690</td><td>0.4668</td><td>0.0968</td><td>0.1453</td></tr>
+            <tr><th scope="row">Bus factor 50p</th><td>2</td><td>2</td><td>7</td><td>11</td></tr>
+            <tr><th scope="row">Bus factor 75p</th><td>16</td><td>13</td><td>18</td><td>75</td></tr>
+            <tr><th scope="row">Gini coefficient</th><td>0.5232</td><td>0.7974</td><td>0.3715</td><td>0.6441</td></tr>
+            <tr><th scope="row">Developer turnover</th><td>0.0679</td><td>0.9094</td><td>0.0231</td><td>0.9104</td></tr>
+            <tr><th scope="row">AI influence score</th><td>0.4362</td><td>0.1454</td><td>0.3959</td><td>0.0875</td></tr>
+            <tr><th scope="row">Effective SDLC mode</th><td>hybrid</td><td>human</td><td>hybrid</td><td>human</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="caption">
+        Note: Turnover refers to contributor-base churn across the analyzed window, not organizational attrition.
+      </p>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Interpretation</h2>
+      <div class="finding-list">
+        <article class="finding-item">
+          <span>01</span>
+          <p>Recent-window analysis may underrepresent historical concentration in mature projects.</p>
+        </article>
+        <article class="finding-item">
+          <span>02</span>
+          <p>Recent-window analysis may overestimate inferred AI influence when recent activity is cleaner or more uniform than the full history.</p>
+        </article>
+        <article class="finding-item">
+          <span>03</span>
+          <p>Fast mode is appropriate for screening and prioritization, while full-history analysis is the validation step for higher-stakes decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">When to Escalate</h2>
+      <div class="grid-3">
+        <article class="card"><h3>Critical dependencies</h3><p>Escalate packages that sit in sensitive or high-impact paths.</p></article>
+        <article class="card"><h3>Onboarding decisions</h3><p>Use full history before adding strategically important dependencies.</p></article>
+        <article class="card"><h3>Supply-chain sensitivity</h3><p>Validate structure when compromise or disruption would carry high operational cost.</p></article>
+        <article class="card"><h3>Unusual deviations</h3><p>Rerun cases where recent behavior diverges strongly from expected structure.</p></article>
+        <article class="card"><h3>Mature projects</h3><p>Be cautious when recent activity may not represent a long accessible history.</p></article>
+        <article class="card"><h3>Low confidence</h3><p>Treat confidence warnings as a reason to inspect, not as a security verdict.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
+      <span><a href="../appsec/">AppSec implications</a></span>
+      <span><a href="../materials/">Research materials</a></span>
+    </div>
+  </footer>
+</body>
+</html>

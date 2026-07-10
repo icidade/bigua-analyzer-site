@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Methodology and metrics used by the Biguá Analyzer study on structural OSS risk." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta property="og:title" content="Methodology · Biguá Analyzer Research" />
+  <meta property="og:description" content="Repository selection, GitHub data sources, structural metrics, inferred AI influence, and analysis confidence." />
+  <meta property="og:type" content="article" />
+  <title>Methodology · Biguá Analyzer Research</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="Biguá Analyzer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biguá Analyzer</span>
+      </a>
+      <details class="nav-disclosure">
+        <summary class="nav-toggle">Menu</summary>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link" href="../">Research</a>
+          <a class="nav-link is-active" href="./">Methodology</a>
+          <a class="nav-link" href="../findings/">Findings</a>
+          <a class="nav-link" href="../fast-vs-full/">Fast vs Full</a>
+          <a class="nav-link" href="../appsec/">AppSec</a>
+          <a class="nav-link" href="../materials/">Materials</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="section site-shell page-hero">
+      <div class="page-hero-inner">
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Methodology</div>
+        <h1 class="page-title">How the study reads repository structure.</h1>
+        <p class="page-lead">
+          Biguá Analyzer uses public GitHub repository data to measure structural signals. The goal is not to label repositories
+          as safe or unsafe, but to support careful interpretation of resilience, continuity, and dependency risk.
+        </p>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Repository Set</h2>
+      <div class="metric-grid">
+        <article class="metric-card"><span class="metric-value">42</span><span class="metric-label">curated OSS repositories</span></article>
+        <article class="metric-card"><span class="metric-value">≥1000</span><span class="metric-label">stars required</span></article>
+        <article class="metric-card"><span class="metric-value">≥50</span><span class="metric-label">contributors required</span></article>
+        <article class="metric-card"><span class="metric-value">≥3 yrs</span><span class="metric-label">project history required</span></article>
+      </div>
+      <p class="section-subtitle after-grid">
+        The repository set spans Go, JavaScript, Java, Python, and Rust projects across frameworks, infrastructure tools,
+        programming languages, developer tooling, and other high-impact open-source categories.
+      </p>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Data Sources</h2>
+      <div class="process-strip">
+        <article>
+          <span class="step-kicker">GitHub API</span>
+          <h3>Repository metadata</h3>
+          <p>Project-level information used to contextualize size, age, activity, and adoption.</p>
+        </article>
+        <article>
+          <span class="step-kicker">Activity</span>
+          <h3>Commits, issues, PRs</h3>
+          <p>Observable development behavior used for contribution, activity, and maintenance signals.</p>
+        </article>
+        <article>
+          <span class="step-kicker">Release history</span>
+          <h3>Releases and cadence</h3>
+          <p>Maintenance rhythm and recent release behavior used as supporting structural context.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Structural Metrics</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Contribution concentration</h3>
+          <p>Gini coefficient and top contributor share measure inequality in contribution distribution across contributors.</p>
+        </article>
+        <article class="card">
+          <h3>Contributor redundancy</h3>
+          <p>Bus factor at 50% and 75% estimates how many contributors account for half or three quarters of analyzed contribution activity.</p>
+        </article>
+        <article class="card">
+          <h3>Activity and maintenance</h3>
+          <p>Release cadence, recent release cadence, commit volatility, and contributor inactivity windows help interpret project continuity.</p>
+        </article>
+        <article class="card">
+          <h3>Turnover</h3>
+          <p>Developer turnover estimates churn across the analyzed contributor base and must be interpreted in project context.</p>
+        </article>
+        <article class="card">
+          <h3>Inferred AI influence</h3>
+          <p>The AI layer combines reproducible repository-visible heuristics. It is not proof of AI authorship for individual commits.</p>
+        </article>
+        <article class="card">
+          <h3>Analysis confidence</h3>
+          <p>The traffic-light classification describes signal quality and interpretive confidence, not repository goodness or security.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <h2 class="section-title">Fast Mode and Full Mode</h2>
+      <div class="comparison-panels">
+        <article class="callout-panel">
+          <h3>Fast mode</h3>
+          <p>Fast mode asks how the repository looks in recent observable behavior. It is useful for screening and prioritization across many dependencies.</p>
+        </article>
+        <article class="callout-panel cool">
+          <h3>Full-history mode</h3>
+          <p>Full mode asks what the repository's structural profile looks like across its accessible history. It is the stronger validation step for sensitive decisions.</p>
+        </article>
+      </div>
+      <div class="quote-panel compact-quote">
+        <p>These modes are complementary and are not expected to always produce identical readings.</p>
+      </div>
+    </section>
+
+    <section class="section site-shell">
+      <div class="warning-note">
+        <h2>Turnover Definition</h2>
+        <p>
+          In this study, turnover means contributor-base churn in the analyzed window. It does not mean employee attrition,
+          maintainer departure, or organizational staffing change.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Biguá Analyzer. Independent research initiative.</span>
+      <span><a href="../materials/">Research materials</a></span>
+      <span><a href="mailto:contact@bigua-analyzer.io">contact@bigua-analyzer.io</a></span>
+    </div>
+  </footer>
+</body>
+</html>
